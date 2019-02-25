@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="stylesheet" href="./assets/font/glacial-indifference/font.css">
+		<title>Hipercss - Teste de interface clean parecido com a do Google</title>
+		<script type="text/javascript" src="./assets/js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header-title">
+				<div class="logo logo-google" data-spanstringify="">hipercss</div>
+			</div>
+			<div class="header-buttons">
+				<a class="button button-2" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+			</div>
+		</header>
+		<nav>
+			<div class="logo">For Developers</div>
+			<ul>
+				<li class="dropdown" data-dropdown="bottom">
+					<a href="#headerElement">Header</a>
+					<ul class="dropdown-content">
+						<li><a href="#headerElement-blank">Blank Header</a></li>
+						<li><a href="#headerElement-logo">Header with logo</a></li>
+						<li><a href="#headerElement-googlelogo">Header with logo (google style)</a></li>
+						<li><a href="#headerElement-buttons">Header with buttons</a></li>
+					</ul>
+				</li>
+				<li class="dropdown" data-dropdown="bottom">
+					<a href="#navElement">Navigation Bar</a>
+					<ul class="dropdown-content">
+						<li><a href="#navElement-links">Navbar with links</a></li>
+						<li><a href="#navElement-title">Navbar with [sub]title</a></li>
+						<li><a href="#navElement-dropdown">Navbar with dropdown</a></li>
+						<li><a href="#navElement-dropdown2">Navbar with dropdown (top, right, bottom, left)</a></li>
+						<li><a href="#navElement-dropdown3">Navbar with multidimensional dropdown</a></li>
+					</ul>
+				</li>
+				<li class="dropdown" data-dropdown="bottom">
+					<a href="#footerElement">Footer</a>
+					<ul class="dropdown-content">
+						<li><a href="#footerElement-blank">Blank Footer</a></li>
+						<li><a href="#footerElement-logo">Footer with logo</a></li>
+						<li><a href="#footerElement-links">Footer with links</a></li>
+						<li><a href="#footerElement-buttons">Footer with buttons</a></li>
+						<li><a href="#footerElement-navigation">Footer with navigation</a></li>
+					</ul>
+				</li>
+				<li><a href="#sticky">Sticky</a></li>
+				<li><a href="#textsElements">Texts</a></li>
+				<li class="dropdown" data-dropdown="bottom">
+					<a href="#formElements">Form Elements</a>
+					<ul class="dropdown-content">
+						<li><a href="#formElements-input">Input text</a></li>
+						<li><a href="#formElements-input2">Input text with left icon</a></li>
+						<li><a href="#formElements-input3">Input text with right icon</a></li>
+						<li><a href="#formElements-input4">Input submit</a></li>
+						<li><a href="#formElements-input5">Input button</a></li>
+						<li><a href="#formElements-input6">Input reset</a></li>
+						<li><a href="#formElements-input7">Input file</a></li>
+						<li><a href="#formElements-textarea">Textarea</a></li>
+					</ul>
+				</li>
+				<li class="dropdown" data-dropdown="bottom">
+					<a href="#buttons">Buttons</a>
+					<ul class="dropdown-content">
+						<li><a href="#buttons-button">&lt;button&gt; element</a></li>
+						<li><a href="#buttons-a">&lt;a&gt; element</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="form-item">
+				<h1 id="headerElement">Header</h1>
+				<div class="form-item">
+					<h2 id="headerElement-blank">Blank</h2>
+					<h3>Code</h3>
+					<xmp>
+<header>INSERT CONTENT HERE</header>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="header">INSERT CONTENT HERE</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="header">INSERT CONTENT HERE</div>
+				</div>
+				<div class="form-item">
+					<h2 id="headerElement-logo">With logo</h2>
+					<h3>Code</h3>
+					<xmp>
+<header>
+	<div class="header-title">
+		<div class="logo">Google</div>
+	</div>
+</header>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="header">
+	<div class="header-title">
+		<div class="logo">Google</div>
+	</div>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="header">
+	<div class="header-title">
+		<div class="logo">Google</div>
+	</div>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="headerElement-googlelogo">With logo (google style)</h2>
+					<h3>Code</h3>
+					<xmp>
+<header>
+	<div class="header-title">
+		<div class="logo logo-google" data-spanstringify="">Google</div>
+	</div>
+</header>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="header">
+	<div class="header-title">
+		<div class="logo logo-google" data-spanstringify="">Google</div>
+	</div>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="header">
+	<div class="header-title">
+		<div class="logo logo-google" data-spanstringify="">Google</div>
+	</div>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="headerElement-buttons">With buttons</h2>
+					<h3>Code</h3>
+					<xmp>
+<header>
+	<div class="header-title">
+		<div class="logo logo-google" data-spanstringify="">Google</div>
+	</div>
+	<div class="header-buttons">
+		<a class="button button-2" href="#">Receber atualizações</a>
+		<a class="button button-1" href="#">Entrar em contato</a>
+	</div>
+</header>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="header">
+	<div class="header-title">
+		<div class="logo logo-google" data-spanstringify="">Google</div>
+	</div>
+	<div class="header-buttons">
+		<a class="button button-2" href="#">Receber atualizações</a>
+		<a class="button button-1" href="#">Entrar em contato</a>
+	</div>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="header">
+	<div class="header-title">
+		<div class="logo logo-google" data-spanstringify="">Google</div>
+	</div>
+	<div class="header-buttons">
+		<a class="button button-2" href="#">Receber atualizações</a>
+		<a class="button button-1" href="#">Entrar em contato</a>
+	</div>
+</div>
+				</div>
+			</div>
+			<div class="form-item">
+				<h1 id="navElement">Navigation bar</h1>
+				<div class="form-item">
+					<h2 id="navElement-links">With links</h2>
+					<h3>Code</h3>
+					<xmp>
+
+<nav>
+	<ul>
+		<li><a href="#a">Navbar link 1</a></li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</nav>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="nav">
+	<ul>
+		<li><a href="#a">Navbar link 1</a></li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="nav">
+	<ul>
+		<li><a href="#a">Navbar link 1</a></li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="navElement-title">With title (subtitle)</h2>
+					<h3>Code</h3>
+					<xmp>
+<nav>
+	<div class="logo">For Developers</div>
+	<ul>
+		<li><a href="#a">Navbar link 1</a></li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</nav>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="nav">
+	<div class="logo">For Developers</div>
+	<ul>
+		<li><a href="#a">Navbar link 1</a></li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="nav">
+	<div class="logo">For Developers</div>
+	<ul>
+		<li><a href="#a">Navbar link 1</a></li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="navElement-dropdown">With dropdown</h2>
+					<h3>Code</h3>
+					<xmp>
+<nav>
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</nav>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="nav">
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="nav">
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="navElement-dropdown2">With other side-dropdown (change data-dropdown value to {top, right, bottom, left})</h2>
+					<h3>Code</h3>
+					<xmp>
+<nav>
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown" data-dropdown="top">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</nav>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="nav">
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown" data-dropdown="top">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="nav">
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown" data-dropdown="top">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="navElement-dropdown3">With multidimensional dropdown</h2>
+					<h3>Code</h3>
+					<xmp>
+<nav>
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown" data-dropdown="bottom">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+				<li class="dropdown" data-dropdown="right">
+					<a href="#i">Dropdown inside Dropdown (with link 9)</a>
+					<ul class="dropdown-content">
+						<li><a href="#b">Dropdown inside Dropdown link 10</a></li>
+						<li><a href="#c">Dropdown inside Dropdown link 11</a></li>
+						<li><a href="#d">Dropdown inside Dropdown link 12</a></li>
+						<li><a href="#e">Dropdown inside Dropdown link 13</a></li>
+						<li><a href="#f">Dropdown inside Dropdown link 14</a></li>
+						<li><a href="#g">Dropdown inside Dropdown link 15</a></li>
+						<li><a href="#h">Dropdown inside Dropdown link 16</a></li>
+						<li><a href="#i">Dropdown inside Dropdown link 17</a></li>
+						<li class="dropdown" data-dropdown="left">
+							<a href="#a">Dropdown inside Dropdown (with link 18)</a>
+							<ul class="dropdown-content">
+								<li><a href="#b">Dropdown inside Dropdown link 19</a></li>
+								<li><a href="#c">Dropdown inside Dropdown link 20</a></li>
+								<li><a href="#d">Dropdown inside Dropdown link 21</a></li>
+								<li><a href="#e">Dropdown inside Dropdown link 22</a></li>
+								<li><a href="#f">Dropdown inside Dropdown link 23</a></li>
+								<li><a href="#g">Dropdown inside Dropdown link 24</a></li>
+								<li><a href="#h">Dropdown inside Dropdown link 25</a></li>
+								<li><a href="#i">Dropdown inside Dropdown link 26</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</nav>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="nav">
+	<div class="logo">For Developers</div>
+	<ul>
+		<li class="dropdown" data-dropdown="bottom">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+				<li class="dropdown" data-dropdown="right">
+					<a href="#i">Dropdown inside Dropdown (with link 9)</a>
+					<ul class="dropdown-content">
+						<li><a href="#b">Dropdown inside Dropdown link 10</a></li>
+						<li><a href="#c">Dropdown inside Dropdown link 11</a></li>
+						<li><a href="#d">Dropdown inside Dropdown link 12</a></li>
+						<li><a href="#e">Dropdown inside Dropdown link 13</a></li>
+						<li><a href="#f">Dropdown inside Dropdown link 14</a></li>
+						<li><a href="#g">Dropdown inside Dropdown link 15</a></li>
+						<li><a href="#h">Dropdown inside Dropdown link 16</a></li>
+						<li><a href="#i">Dropdown inside Dropdown link 17</a></li>
+						<li class="dropdown" data-dropdown="left">
+							<a href="#a">Dropdown inside Dropdown (with link 18)</a>
+							<ul class="dropdown-content">
+								<li><a href="#b">Dropdown inside Dropdown link 19</a></li>
+								<li><a href="#c">Dropdown inside Dropdown link 20</a></li>
+								<li><a href="#d">Dropdown inside Dropdown link 21</a></li>
+								<li><a href="#e">Dropdown inside Dropdown link 22</a></li>
+								<li><a href="#f">Dropdown inside Dropdown link 23</a></li>
+								<li><a href="#g">Dropdown inside Dropdown link 24</a></li>
+								<li><a href="#h">Dropdown inside Dropdown link 25</a></li>
+								<li><a href="#i">Dropdown inside Dropdown link 26</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+
+					</xmp>
+					<h3>Result</h3>
+<div class="nav">
+	<ul>
+		<li class="logo">For Developers</li>
+		<li class="dropdown" data-dropdown="bottom">
+			<a href="#a">Dropdown Example (with link 1)</a>
+			<ul class="dropdown-content">
+				<li><a href="#b">Dropdown link 2</a></li>
+				<li><a href="#c">Dropdown link 3</a></li>
+				<li><a href="#d">Dropdown link 4</a></li>
+				<li><a href="#e">Dropdown link 5</a></li>
+				<li><a href="#f">Dropdown link 6</a></li>
+				<li><a href="#g">Dropdown link 7</a></li>
+				<li><a href="#h">Dropdown link 8</a></li>
+				<li class="dropdown" data-dropdown="right">
+					<a href="#i">Dropdown inside Dropdown (with link 9)</a>
+					<ul class="dropdown-content">
+						<li><a href="#b">Dropdown inside Dropdown link 10</a></li>
+						<li><a href="#c">Dropdown inside Dropdown link 11</a></li>
+						<li><a href="#d">Dropdown inside Dropdown link 12</a></li>
+						<li><a href="#e">Dropdown inside Dropdown link 13</a></li>
+						<li><a href="#f">Dropdown inside Dropdown link 14</a></li>
+						<li><a href="#g">Dropdown inside Dropdown link 15</a></li>
+						<li><a href="#h">Dropdown inside Dropdown link 16</a></li>
+						<li><a href="#i">Dropdown inside Dropdown link 17</a></li>
+						<li class="dropdown" data-dropdown="left">
+							<a href="#a">Dropdown inside Dropdown (with link 18)</a>
+							<ul class="dropdown-content">
+								<li><a href="#b">Dropdown inside Dropdown link 19</a></li>
+								<li><a href="#c">Dropdown inside Dropdown link 20</a></li>
+								<li><a href="#d">Dropdown inside Dropdown link 21</a></li>
+								<li><a href="#e">Dropdown inside Dropdown link 22</a></li>
+								<li><a href="#f">Dropdown inside Dropdown link 23</a></li>
+								<li><a href="#g">Dropdown inside Dropdown link 24</a></li>
+								<li><a href="#h">Dropdown inside Dropdown link 25</a></li>
+								<li><a href="#i">Dropdown inside Dropdown link 26</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#b">Navbar link 2</a></li>
+		<li><a href="#c">Navbar link 3</a></li>
+		<li><a href="#d">Navbar link 4</a></li>
+		<li><a href="#e">Navbar link 5</a></li>
+		<li><a href="#f">Navbar link 6</a></li>
+		<li><a href="#g">Navbar link 7</a></li>
+		<li><a href="#h">Navbar link 8</a></li>
+		<li><a href="#i">Navbar link 9</a></li>
+	</ul>
+</div>
+				</div>
+			</div>
+			<div class="form-item">
+				<h1 id="footerElement">Footer</h1>
+				<div class="form-item">
+					<h2 id="footerElement-blank">Blank</h2>
+					<h3>Code</h3>
+					<xmp>
+<footer>INSERT CONTENT HERE</footer>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="footer">INSERT CONTENT HERE</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="footer">INSERT CONTENT HERE</div>
+				</div>
+				<div class="form-item">
+					<h2 id="footerElement-logo">With logo</h2>
+					<h3>Code</h3>
+					<xmp>
+<footer>
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+	</div>
+</footer>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="footer">
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+	</div>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="footer">
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+	</div>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="footerElement-links">With links</h2>
+					<h3>Code</h3>
+					<xmp>
+<footer>
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+</footer>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="footer">
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="footer">
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="footerElement-buttons">With buttons</h2>
+					<h3>Code</h3>
+					<xmp>
+<footer>
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+	<div class="footer-buttons">
+		<a class="button button-1" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+	</div>
+</footer>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="footer">
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+	<div class="footer-buttons">
+		<a class="button button-1" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+	</div>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="footer">
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+	<div class="footer-buttons">
+		<a class="button button-1" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+	</div>
+</div>
+				</div>
+				<div class="form-item">
+					<h2 id="footerElement-navigation">With navigation</h2>
+					<h3>Code</h3>
+					<xmp>
+<footer>
+	<nav>
+		<div class="footer-element">
+			<h3>Title 1</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 2</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 3</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 4</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 5</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 6</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+	</nav>
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+	<div class="footer-buttons">
+		<a class="button button-1" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+	</div>
+</footer>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="footer">
+	<nav>
+		<div class="footer-element">
+			<h3>Title 1</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 2</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 3</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 4</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 5</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 6</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+	</nav>
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+	<div class="footer-buttons">
+		<a class="button button-1" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+	</div>
+</div>
+					</xmp>
+					<h3>Result</h3>
+<div class="footer">
+	<nav>
+		<div class="footer-element">
+			<h3>Title 1</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 2</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 3</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 4</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 5</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+		<div class="footer-element">
+			<h3>Title 6</h3>
+			<a href="#">Content 1</a>
+			<a href="#">Content 2</a>
+			<a href="#">Content 3</a>
+			<a href="#">Content 4</a>
+			<a href="#">Content ...</a>
+			<a href="#">Content N</a>
+		</div>
+	</nav>
+	<div class="footer-links">
+		<a href="#" class="logo">Google</a>
+		<div class="footer-links">
+			<a href="#">Privacidade</a>
+			<a href="#">Termos</a>
+			<a href="#">Sobre o Google</a>
+			<a href="#">Produtos do Google</a>
+		</div>
+	</div>
+	<div class="footer-buttons">
+		<a class="button button-1" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+	</div>
+</div>
+				</div>
+			</div>
+			<div class="form-item">
+				<h1 id="sticky">Sticky elements</h1>
+				<p>Put [sticky (or sticky-top), sticky-right, sticky-bottom, sticky-left] class in <a href="#headerElement">header</a> and/or <a href="#navElement">navbar</a> element, but it also works with other elements.</p>
+				<p>Put [sticky-only-pc] if you want to block mobile sticky. Put [sticky-only-mobile] if you want to block pc sticky.</p>
+				<div class="form-item">
+					<h3>Code</h3>
+					<xmp>
+<nav class="sticky">...</nav>
+					</xmp>
+					<h3>Or</h3>
+					<xmp>
+<div class="nav sticky">...</nav>
+					</xmp>
+					<h3>Result</h3>
+<p>You can't see here, but look at top.</p>
+				</div>
+			<div class="form-item">
+				<h1 id="textsElements">Texts (<span style="color: #ff0000">insert inside &lt;main&gt; tag</span>)</h1>
+				<div class="form-item">
+					<h3>Code</h3>
+					<xmp>
+<h1>Heading 1 (H1)</h1>
+<h2>Heading 2 (H2)</h2>
+<h3>Heading 3 (H3)</h3>
+<h4>Heading 4 (H4)</h4>
+<h5>Heading 5 (H5)</h5>
+<h6>Heading 6 (H6)</h6>
+<p>Paragraph</p>
+					</xmp>
+					<h3>Result</h3>
+<h1>Heading 1 (H1)</h1>
+<h2>Heading 2 (H2)</h2>
+<h3>Heading 3 (H3)</h3>
+<h4>Heading 4 (H4)</h4>
+<h5>Heading 5 (H5)</h5>
+<h6>Heading 6 (H6)</h6>
+<p>Paragraph</p>
+				</div>
+			</div>
+			<div class="form-item">
+				<h1 id="formElements">Form Elements (<span style="color: #ff0000">insert inside &lt;main&gt; tag</span>)</h1>
+				<form>
+					<div class="form-item">
+						<h2 id="formElements-input">Input text, email, number, tel, password, url</h2>
+						<h3>Code</h3>
+						<xmp>
+<input placeholder="without type">
+<input type="text" placeholder="Default text Here">
+<input type="email" placeholder="Default email Here">
+<input type="number" placeholder="Default number Here">
+<input type="tel" placeholder="Default tel Here">
+<input type="password" placeholder="Default password Here">
+<input type="url" placeholder="Default url Here">
+						</xmp>
+						<h3>Result</h3>
+<input placeholder="without type">
+<input type="text" placeholder="Default text Here">
+<input type="email" placeholder="Default email Here">
+<input type="number" placeholder="Default number Here">
+<input type="tel" placeholder="Default tel Here">
+<input type="password" placeholder="Default password Here">
+<input type="url" placeholder="Default url Here">
+					</div>
+					<div class="form-item">
+						<h2 id="formElements-input2">Input text, email, number, tel, password, url with left icon </h2>
+						<h3>Code</h3>
+						<xmp>
+<input class="left-icon icon-info" placeholder="without type">
+<input class="left-icon icon-info" type="text" placeholder="Default text Here">
+<input class="left-icon icon-info" type="email" placeholder="Default email Here">
+<input class="left-icon icon-info" type="number" placeholder="Default number Here">
+<input class="left-icon icon-info" type="tel" placeholder="Default tel Here">
+<input class="left-icon icon-info" type="password" placeholder="Default password Here">
+<input class="left-icon icon-info" type="url" placeholder="Default url Here">
+						</xmp>
+						<h3>Result</h3>
+<input class="left-icon icon-info" placeholder="without type">
+<input class="left-icon icon-info" type="text" placeholder="Default text Here">
+<input class="left-icon icon-info" type="email" placeholder="Default email Here">
+<input class="left-icon icon-info" type="number" placeholder="Default number Here">
+<input class="left-icon icon-info" type="tel" placeholder="Default tel Here">
+<input class="left-icon icon-info" type="password" placeholder="Default password Here">
+<input class="left-icon icon-info" type="url" placeholder="Default url Here">
+					</div>
+					<div class="form-item">
+						<h2 id="formElements-input3">Input text, email, number, tel, password, url with right icon</h2>
+						<h3>Code</h3>
+						<xmp>
+<input class="right-icon icon-info" placeholder="without type">
+<input class="right-icon icon-info" type="text" placeholder="Default text Here">
+<input class="right-icon icon-info" type="email" placeholder="Default email Here">
+<input class="right-icon icon-info" type="number" placeholder="Default number Here">
+<input class="right-icon icon-info" type="tel" placeholder="Default tel Here">
+<input class="right-icon icon-info" type="password" placeholder="Default password Here">
+<input class="right-icon icon-info" type="url" placeholder="Default url Here">
+						</xmp>
+						<h3>Result</h3>
+<input class="right-icon icon-info" placeholder="without type">
+<input class="right-icon icon-info" type="text" placeholder="Default text Here">
+<input class="right-icon icon-info" type="email" placeholder="Default email Here">
+<input class="right-icon icon-info" type="number" placeholder="Default number Here">
+<input class="right-icon icon-info" type="tel" placeholder="Default tel Here">
+<input class="right-icon icon-info" type="password" placeholder="Default password Here">
+<input class="right-icon icon-info" type="url" placeholder="Default url Here">
+					</div>
+					<div class="form-item">
+						<h2 id="formElements-input4">Input submit</h2>
+						<h3>Code</h3>
+						<xmp>
+<input type="submit" value="Default">
+<input type="submit" class="button-1" value="Enabled 1">
+<input type="submit" class="button-2" value="Enabled 2">
+<input type="submit" disabled="" value="Disabled">
+						</xmp>
+						<h3>Result</h3>
+<input type="submit" value="Default">
+<input type="submit" class="button-1" value="Enabled 1">
+<input type="submit" class="button-2" value="Enabled 2">
+<input type="submit" disabled="" value="Disabled">
+					</div>
+					<div class="form-item">
+						<h2 id="formElements-input5">Input button</h2>
+						<h3>Code</h3>
+						<xmp>
+<input type="button" value="Default">
+<input type="button" class="button-1" value="Enabled 1">
+<input type="button" class="button-2" value="Enabled 2">
+<input type="button" disabled="" value="Disabled">
+						</xmp>
+						<h3>Result</h3>
+<input type="button" value="Default">
+<input type="button" class="button-1" value="Enabled 1">
+<input type="button" class="button-2" value="Enabled 2">
+<input type="button" disabled="" value="Disabled">
+					</div>
+					<div class="form-item">
+						<h2 id="formElements-input6">Input reset</h2>
+						<h3>Code</h3>
+						<xmp>
+<input type="reset" value="Default">
+<input type="reset" class="button-1" value="Enabled 1">
+<input type="reset" class="button-2" value="Enabled 2">
+<input type="reset" disabled="" value="Disabled">
+						</xmp>
+						<h3>Result</h3>
+<input type="reset" value="Default">
+<input type="reset" class="button-1" value="Enabled 1">
+<input type="reset" class="button-2" value="Enabled 2">
+<input type="reset" disabled="" value="Disabled">
+					</div>
+					<div class="form-item">
+						<h2 id="formElements-input7">Input file</h2>
+						<h3>Code</h3>
+						<xmp>
+Default
+<input type="file">
+
+Enabled 1
+<input type="file" class="button-1">
+
+Enabled 2
+<input type="file" class="button-2">
+
+Disabled
+<input type="file" disabled="">
+						</xmp>
+						<h3>Result</h3>
+Default
+<input type="file">
+
+Enabled 1
+<input type="file" class="button-1">
+
+Enabled 2
+<input type="file" class="button-2">
+
+Disabled
+<input type="file" disabled="">
+					</div>
+					<div class="form-item">
+						<h2 id="formElements-textarea">Textarea</h2>
+						<h3>Code</h3>
+						<xmp>
+<textarea placeholder="Default"></textarea>
+<textarea class="left-icon icon-info" placeholder="left-icon"></textarea>
+<textarea class="right-icon icon-info" placeholder="right-icon"></textarea>
+						</xmp>
+						<h3>Result</h3>
+<textarea placeholder="Default"></textarea>
+<textarea class="left-icon icon-info" placeholder="left-icon"></textarea>
+<textarea class="right-icon icon-info" placeholder="right-icon"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="form-item">
+				<h1 id="buttons">Buttons</h1>
+				<div class="form-item">
+					<h2 id="buttons-button">&lt;button&gt; tag</h2>
+					<h3>Code</h3>
+					<xmp>
+<button>Default</button>
+<button class="button-1">Enabled 1</button>
+<button class="button-2">Enabled 2</button>
+<button disabled="">Disabled</button>
+					</xmp>
+					<h3>Result</h3>
+<button>Default</button>
+<button class="button-1">Enabled 1</button>
+<button class="button-2">Enabled 2</button>
+<button disabled="">Disabled</button>
+				</div>
+				<div class="form-item">
+					<h2 id="buttons-a">&lt;a&gt; tag</h2>
+					<h3>Code</h3>
+					<xmp>
+<a class="button" href="#">Default</a>
+<a class="button button-1" href="#">Enabled 1</a>
+<a class="button button-2" href="#">Enabled 2</a>
+					</xmp>
+					<h3>Result</h3>
+<a class="button" href="#">Default</a>
+<a class="button button-1" href="#">Enabled 1</a>
+<a class="button button-2" href="#">Enabled 2</a>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<nav>
+				<div class="footer-element">
+					<h3>Title 1</h3>
+					<a href="#">Content 1</a>
+					<a href="#">Content 2</a>
+					<a href="#">Content 3</a>
+					<a href="#">Content 4</a>
+					<a href="#">Content ...</a>
+					<a href="#">Content N</a>
+				</div>
+				<div class="footer-element">
+					<h3>Title 2</h3>
+					<a href="#">Content 1</a>
+					<a href="#">Content 2</a>
+					<a href="#">Content 3</a>
+					<a href="#">Content 4</a>
+					<a href="#">Content ...</a>
+					<a href="#">Content N</a>
+				</div>
+				<div class="footer-element">
+					<h3>Title 3</h3>
+					<a href="#">Content 1</a>
+					<a href="#">Content 2</a>
+					<a href="#">Content 3</a>
+					<a href="#">Content 4</a>
+					<a href="#">Content ...</a>
+					<a href="#">Content N</a>
+				</div>
+				<div class="footer-element">
+					<h3>Title 4</h3>
+					<a href="#">Content 1</a>
+					<a href="#">Content 2</a>
+					<a href="#">Content 3</a>
+					<a href="#">Content 4</a>
+					<a href="#">Content ...</a>
+					<a href="#">Content N</a>
+				</div>
+				<div class="footer-element">
+					<h3>Title 5</h3>
+					<a href="#">Content 1</a>
+					<a href="#">Content 2</a>
+					<a href="#">Content 3</a>
+					<a href="#">Content 4</a>
+					<a href="#">Content ...</a>
+					<a href="#">Content N</a>
+				</div>
+				<div class="footer-element">
+					<h3>Title 6</h3>
+					<a href="#">Content 1</a>
+					<a href="#">Content 2</a>
+					<a href="#">Content 3</a>
+					<a href="#">Content 4</a>
+					<a href="#">Content ...</a>
+					<a href="#">Content N</a>
+				</div>
+			</nav>
+			<div class="footer-links">
+				<a href="#" class="logo">hipercss</a>
+				<div class="footer-links">
+					<a href="#">Privacidade</a>
+					<a href="#">Termos</a>
+					<a href="#">Sobre o Google</a>
+					<a href="#">Produtos do Google</a>
+				</div>
+			</div>
+			<div class="footer-buttons">
+				<a class="button button-1" href="mailto:gabrielramos149@gmail.com">Give feedback</a>
+			</div>
+		</footer>
+	</body>
+</html>
+<!--
+<div class="form-item">
+	<h1>Texts</h1>
+	<div class="form-item">
+		<h2>subtitle</h2>
+		<h3>Code</h3>
+		<xmp>
+		</xmp>
+		<h3>Or</h3>
+		<xmp>
+
+		</xmp>
+		<h3>Result</h3>
+
+	</div>
+</div>
+-->
