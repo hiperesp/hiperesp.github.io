@@ -1,53 +1,52 @@
-window.onload = function(){
-	StartHiperCss();
-};
-function StartHiperCss(){
-	SpanizeStrings();				//converter string para <span>string</span> de acordo com algumas condições...;
-	LabelizeInputFiles();			//converter input[type="file"] para label (na verdade criar uma label automática);
+function addRepo(title = "", description = "", demoAddress = "", repoAddress = ""){
+	const repoItem = document.createElement("div");
+	repoItem.classList.add("list-item");
+	const titleContainer = document.createElement("div");
+	titleContainer.classList.add("text");
+	const titleTextContainer = document.createElement("h2");
+	titleTextContainer.textContent = title;
+	titleContainer.appendChild(titleTextContainer);
+	repoItem.appendChild(titleContainer);
+	if(description) {
+		const descContainer = document.createElement("div");
+		descContainer.classList.add("text");
+		const descTextContainer = document.createElement("p");
+		descTextContainer.textContent = description;
+		descContainer.appendChild(descTextContainer);
+		repoItem.appendChild(descContainer);
+	}
+	const actionButtonsContainer = document.createElement("div");
+	actionButtonsContainer.classList.add("text");
+	const repoLink = document.createElement("a");
+	repoLink.href = repoAddress;
+	repoLink.target = "_blank";
+	const repoButton = document.createElement("button");
+	repoButton.textContent = "Repo";
+	repoLink.appendChild(repoButton);
+	actionButtonsContainer.appendChild(repoLink);
+	const demoLink = document.createElement("a");
+	demoLink.href = demoAddress;
+	demoLink.target = "_blank";
+	const demoButton = document.createElement("button");
+	demoButton.textContent = "Demo";
+	demoButton.classList.add("button-2");
+	if(!demoAddress) {
+		demoButton.disabled = true;
+	}
+	demoLink.appendChild(demoButton);
+	actionButtonsContainer.appendChild(demoLink);
+	repoItem.appendChild(actionButtonsContainer);
+	document.querySelector("#repo-list").appendChild(repoItem);
 }
-function SpanizeStrings(){
-	var stringToSpan = document.querySelectorAll("*[data-spanstringify=\"\"]");
-	for(var i=0;i<stringToSpan.length;i++){
-		SpanizeString(stringToSpan[i]);
+async function loadRepos(){
+	const repos = await fetch("https://api.github.com/users/hiperesp/repos?sort=pushed")
+		.then(data => data.text())
+		.then(json => JSON.parse(json));
+	const repoCountElements = document.querySelectorAll(".repo-count");
+	for(let repoCount of repoCountElements) {
+		repoCount.textContent = repos.length;
 	}
-	delete stringToSpan;
-}
-function SpanizeString(element){
-	var stringToSpanHTML = "";
-	for(var i=0;i<element.textContent.length;i++){
-		stringToSpanHTML += "<span>"+element.textContent[i]+"</span>";
-	}
-	element.innerHTML = stringToSpanHTML;
-	delete stringToSpanHTML;
-}
-function LabelizeInputFiles(){
-	var fileToLabel = document.querySelectorAll("input[type=\"file\"]");
-	for(var i=0;i<fileToLabel.length;i++){
-		LabelizeInputFile(fileToLabel[i], i);
-	}
-}
-function ChangeFakeInputFile(element){
-	var FileNameInputs = document.querySelectorAll("input[data-filenameinputfileid=\""+element.id+"\"]");
-	for(var i=0;i<FileNameInputs.length;i++){
-		if(element.files.length>0){
-			FileNameInputs[i].value = element.files[0].name;
-			FileNameInputs[i].title = element.files[0].name;
-		} else {
-			FileNameInputs[i].value = "";
-			FileNameInputs[i].title = "Nenhum arquivo selecionado.";
-		}
-	}
-}
-function LabelizeInputFile(element, i){
-	if(element.id==""||typeof element.id=="undefined"){
-		element.id = "fileElement"+i;
-	}
-	element.setAttribute("onchange", element.getAttribute("onchange")+";ChangeFakeInputFile(this);");
-	element.setAttribute("onreset", element.getAttribute("onreset")+";ChangeFakeInputFile(this);");
-	if(element.disabled){
-		element.outerHTML = "<div class=\"fakeInputFile\" data-inputfileid=\""+element.id+"\">"+element.outerHTML+"<label class=\"button disabled\" for=\""+element.id+"\">Escolher Arquivo</label><input type=\"text\" placeholder=\"Nenhum arquivo selecionado.\" data-filenameinputfileid=\""+element.id+"\" value=\"\" disabled=\"\"></div>";
-	} else {
-		element.outerHTML = "<div class=\"fakeInputFile\" data-inputfileid=\""+element.id+"\">"+element.outerHTML+"<label class=\"button button-1\" for=\""+element.id+"\">Escolher Arquivo</label><input type=\"text\" placeholder=\"Nenhum arquivo selecionado.\" data-filenameinputfileid=\""+element.id+"\" value=\"\" disabled=\"\"></div>";
-	}
-	ChangeFakeInputFile(element);
+	for(let repo of repos) {
+        addRepo(repo.name, repo.description, repo.homepage, repo.html_url);
+    }
 }
